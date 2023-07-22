@@ -1,0 +1,67 @@
+#include <stdio.h>
+
+int main() {
+/*   **************************set**********
+    int x =0 ;
+    int bit = 0 ;
+    while (1)
+    {
+        printf("enter x =\n");
+        scanf("%d",&x);
+        printf("enter bit = \n");
+        scanf("%d",&bit);
+        x=x|(1<<bit);
+        printf("x= %d \n",x);
+    }
+**************************************
+              clear
+    int x =0 ;
+    int bit = 0 ;
+    while (1)
+    {
+        printf("enter x =\n");
+        scanf("%d",&x);
+        printf("enter bit = \n");
+        scanf("%d",&bit);
+        x=x&~(1<<bit);
+        printf("x= %d \n",x);
+    }
+***************************************
+
+             toggle
+
+
+int x =0 ;
+    int bit = 0 ;
+    while (1)
+    {
+        printf("enter x =");
+        scanf("%d",&x);
+        printf("enter bit =");
+        scanf("%d",&bit);
+        x=x ^(1<<bit);
+        printf("x= %d \n",x);
+    }
+*/
+********************************
+              read
+int x =0 ;
+    int bit = 0 ;
+    while (1)
+    {
+        printf("enter x =");
+        scanf("%d",&x);
+        printf("enter bit =");
+        scanf("%d",&bit);
+        x=1 &(x>>bit);
+        printf("x= %d \n",x);
+    }
+
+
+
+
+
+
+    return 0;
+
+}
