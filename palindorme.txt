@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main()
+{
+    while(1)
+    {
+        int num, digit_1, digit_2, digit_4_5, digit_1_2, digit, temp;
+        printf("Enter 5 digits: ");
+        scanf("%d", &num);
+        temp = num;
+        digit_1 = temp/10000;
+        temp %= 10000;
+        digit_2 = temp/1000;
+        temp %= 1000;
+        temp %= 100;
+        digit_4_5 = temp;
+        digit_1_2 = digit_2*10 + digit_1;
+
+        if(digit_1_2 == digit_4_5)
+        {
+            printf("Mirrored Number\n");
+        }
+        else
+        {
+            printf("Not Mirrored Number\n");
+        }
+    }
+
+    return 0;
+}
